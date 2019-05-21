@@ -1,3 +1,28 @@
 // Place all the styles related to the task controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.title-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button_to {
+  margin: auto 5px;
+}
+
+.button_to input{
+  background-color: #ccc9c9;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 0 15px;
+  height: 35px;
+}
+
+.detail-box {
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #80808030;
+  padding: 10px 5px;
+}
+
+

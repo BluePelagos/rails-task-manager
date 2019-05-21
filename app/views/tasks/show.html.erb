@@ -1,7 +1,11 @@
-<h1>Task with details</h1>
+<div class="container w-50">
+  <div class="title-box">
+    <h1><%= @task.title %></h1>
+    <%= button_to "Edit this task", edit_task_path, method: :get%>
+  </div>
+  <div class="detail-box">
+    <%= @task.details %>
+  </div>
+  <%= link_to "Back to task list", tasks_path %>
+</div>
 
-<p><%= @task.title %> <%= @task.details %></p>
-<br>
-
-<p><%= link_to "Edit task", edit_task_path %></p>
-<p><%= link_to "Back to task list", tasks_path %></p>
