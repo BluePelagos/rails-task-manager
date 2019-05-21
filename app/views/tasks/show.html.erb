@@ -6,6 +6,15 @@
   <div class="detail-box">
     <%= @task.details %>
   </div>
-  <%= link_to "Back to task list", tasks_path %>
+    <br>
+    <% if @task.completed == true %>
+          <p><%= check_box_tag(@task.title, @task.details, true) %>
+          <%= "Task is completed" %></p>
+    <% else %>
+          <p><%= check_box_tag(@task.title, @task.details, @task.completed) %>
+          <%= "Task is not completed yet" %></p>
+    <% end %>
+    <hr>
+    <p><%= link_to "Back to task list", tasks_path %></p>
 </div>
 
