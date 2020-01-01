@@ -12,7 +12,7 @@
       <%= f.label :details %>
       <%= f.text_area :details, class: 'form-control' %>
     </div>
-    <p><%= check_box_tag(@task.title, @task.details, @task.completed) %>
+    <p><%= check_box_tag("title", @task.details, @task.completed) %>
       Completed
     </p>
     <%= f.submit class: 'btn btn-primary' %>

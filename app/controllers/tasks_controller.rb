@@ -23,6 +23,7 @@ class TasksController < ApplicationController
 
   def update
     @task = Task.find(params[:id])
+    completed?
     @task.update(task_params)
     redirect_to task_path(@task)
   end
@@ -31,6 +32,9 @@ class TasksController < ApplicationController
     @task = Task.find(params[:id])
     @task.destroy
     redirect_to tasks_path
+  end
+
+  def completed?
   end
 
   private
